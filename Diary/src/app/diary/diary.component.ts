@@ -8,11 +8,12 @@ import { from } from 'rxjs';
   styleUrls: ['./diary.component.css']
 })
 export class DiaryComponent implements OnInit {
+ 
+  // updating output binding property
   diary:Diary[] = [
-    {id:1, name:'shopping',description:'going to but household stuffs'},
-    {id:2, name:'swimming',description:'going to but household stuffs'},
-    {id:3, name:'java', description:'going to but household stuffs'},
-    {id:4, name:'programming', description:'going to but household stuffs'},
+    new Diary(1,'shopping','going to buy household stuffs'),
+    new Diary(2,'swimming','spend the weekend on swimming pool')
+   
   ];
 
   constructor() { }

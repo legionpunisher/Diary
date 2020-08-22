@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Diary } from '../diary'
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-diary-detail',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiaryDetailComponent implements OnInit {
 
+  @Input () diary:Diary;
   constructor() { }
 
   ngOnInit(): void {
