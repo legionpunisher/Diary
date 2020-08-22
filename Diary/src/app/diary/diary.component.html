@@ -1,0 +1,11 @@
+<!-- <p>diary works!</p> -->
+<div>
+    <h1>My DIARY</h1>
+    <hr>
+    <ul>
+        <li *ngFor='let diary of diary'>
+          {{diary.name}}
+        </li>
+    </ul>
+    <p *ngIf='diary.length > 3'>Your diary are too many</p>
+  </div>
